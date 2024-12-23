@@ -1,0 +1,7 @@
+{
+  "name": "Meteo.lt Forecast",
+  "homeassistant": "2024.1.0",
+  "hacs": "1.33.0",
+  "country": "LT",
+  "render_readme": true
+}

@@ -1,7 +1,34 @@
-<<<<<<< HEAD
 # Meteo.lt Forecast Integration for Home Assistant
 
+[![hacs_badge](https://img.shields.io/badge/HACS-Custom-41BDF5.svg)](https://github.com/hacs/integration)
+[![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
+
 This is a custom integration for Home Assistant that provides weather forecast data from the official Lithuanian Hydrometeorological Service (LHMT) API - Meteo.lt.
+
+## Installation
+
+### HACS (Recommended)
+
+1. Make sure [HACS](https://hacs.xyz/) is installed in your Home Assistant instance
+2. Add this repository as a custom repository in HACS:
+   - Click the three dots in the top right corner and select "Custom repositories"
+   - Add `https://github.com/moonia33/meteoltforecast`
+   - Select category "Integration"
+3. Click "Install"
+4. Restart Home Assistant
+
+### Manual Installation
+
+1. Copy the `custom_components/meteoltforecast` folder to your Home Assistant's `custom_components` folder
+2. Restart Home Assistant
+
+## Configuration
+
+1. Go to Settings -> Devices & Services
+2. Click "+ ADD INTEGRATION"
+3. Search for "Meteo.lt Forecast"
+4. Select your location from the dropdown list (closest location to your Home Assistant coordinates will be selected by default)
+5. Click "Submit"
 
 ## Features
 
@@ -19,40 +46,9 @@ This is a custom integration for Home Assistant that provides weather forecast d
 - Local time zone support (automatically converts UTC to Europe/Vilnius)
 - Compatible with Home Assistant's standard weather cards and dashboards
 
-## Prerequisites
+## Example Usage
 
-Before installing this integration, make sure:
-
-- You have Home Assistant installed
-- You have HACS (Home Assistant Community Store) installed
-- Your Home Assistant instance is running in Lithuania or you're interested in Lithuanian weather forecasts
-
-## Installation
-
-### Option 1: Installation via HACS (Recommended)
-
-1. In HACS, click the three dots in the top right corner and select "Custom repositories"
-2. Add this repository URL with category "Integration"
-3. Click "Install"
-4. Restart Home Assistant
-
-### Option 2: Manual Installation
-
-1. Download the latest release
-2. Copy the `custom_components/meteoltforecast` folder to your Home Assistant's `custom_components` folder
-3. Restart Home Assistant
-
-## Configuration
-
-1. Go to Home Assistant Settings > Devices & Services
-2. Click "Add Integration"
-3. Search for "Meteo.lt Forecast"
-4. Select your location from the dropdown list (closest location to your Home Assistant coordinates will be selected by default)
-5. Click "Submit"
-
-## Usage
-
-After configuration, the integration will create a weather entity that you can use in:
+You can use this integration in:
 
 - Weather cards
 - Weather dashboard
@@ -69,11 +65,11 @@ entity: weather.meteoltforecast_your_location
 
 ## API Attribution
 
-This integration uses the official LHMT (Lithuanian Hydrometeorological Service) API. Data is provided under the Creative Commons Attribution-ShareAlike 4.0 (CC BY-SA 4.0) license. When using the data, please attribute: "Data source: LHMT".
+This integration uses the official LHMT (Lithuanian Hydrometeorological Service) API. Data is provided under the Creative Commons Attribution-ShareAlike 4.0 (CC BY-SA 4.0) license.
 
-## API Rate Limits
+[![Add Integration to your Home Assistant instance.](https://my.home-assistant.io/badges/config_flow_start.svg)](https://my.home-assistant.io/redirect/config_flow_start/?domain=meteoltforecast)
 
-The API has the following rate limits:
+## API Limitations
 
 - Maximum 180 requests per minute from one IP address
 - Maximum 20,000 requests per day from one IP address
@@ -82,9 +78,9 @@ The integration is configured to update data every 30 minutes by default to stay
 
 ## Troubleshooting
 
-Common issues and solutions:
+### Common Issues
 
-1. **Integration not showing up in Home Assistant:**
+1. **Integration not showing up:**
 
    - Make sure you've restarted Home Assistant after installation
    - Check your Home Assistant logs for any errors
@@ -99,25 +95,14 @@ Common issues and solutions:
    - Remove the integration
    - Add it again and manually select your preferred location
 
-## Contributing
+## Contributions
 
-Feel free to contribute to this project by:
-
-- Reporting bugs
-- Suggesting improvements
-- Creating pull requests
-- Providing feedback
-
-## Disclaimer
-
-This integration is provided "as is", without warranty of any kind, express or implied. The creator takes no responsibility for any damages that might occur from the use of this integration. Use at your own risk.
-
-Please note that this is a third-party integration and is not officially supported by LHMT or Home Assistant. The integration may stop working if the LHMT API changes.
+Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
 
 This project is licensed under CC BY-SA 4.0 - see the LICENSE file for details.
-=======
-# meteoltforecast
-This is a custom integration for Home Assistant that provides weather forecast data from the official Lithuanian Hydrometeorological Service (LHMT) API - Meteo.lt.
->>>>>>> d42a40e46664f58e3bf0b8c90f0330a4761c07cf
+
+## Disclaimer
+
+This integration is provided "as is", without warranty of any kind. The creator takes no responsibility for any damages that might occur from its use. Use at your own risk.
