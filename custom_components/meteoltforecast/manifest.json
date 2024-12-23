@@ -1,9 +1,9 @@
 {
   "domain": "meteoltforecast",
   "name": "Meteo.lt Forecast",
-  "codeowners": ["@your-github-username"],
+  "codeowners": ["@moonia33"],
   "config_flow": true,
-  "documentation": "https://github.com/your-repo/meteolt",
+  "documentation": "https://github.com/moonia33/meteoltforecast",
   "iot_class": "cloud_polling",
   "issue_tracker": "https://github.com/your-repo/meteolt/issues",
   "requirements": ["aiohttp>=3.8.0", "geopy>=2.3.0"],
