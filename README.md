@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Meteo.lt Forecast Integration for Home Assistant
 
 This is a custom integration for Home Assistant that provides weather forecast data from the official Lithuanian Hydrometeorological Service (LHMT) API - Meteo.lt.
@@ -116,3 +117,7 @@ Please note that this is a third-party integration and is not officially support
 ## License
 
 This project is licensed under CC BY-SA 4.0 - see the LICENSE file for details.
+=======
+# meteoltforecast
+This is a custom integration for Home Assistant that provides weather forecast data from the official Lithuanian Hydrometeorological Service (LHMT) API - Meteo.lt.
+>>>>>>> d42a40e46664f58e3bf0b8c90f0330a4761c07cf
