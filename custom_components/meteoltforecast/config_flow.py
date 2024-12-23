@@ -63,7 +63,7 @@ class MeteoLTConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
 
         if user_input is not None:
             return self.async_create_entry(
-                title=self._places.get(user_input[CONF_PLACE], DEFAULT_NAME),
+                title=self._places[user_input[CONF_PLACE]],
                 data=user_input,
             )
 

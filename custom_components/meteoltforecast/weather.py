@@ -66,9 +66,11 @@ class MeteoLTWeather(CoordinatorEntity, WeatherEntity):
 
         # Entity properties
         self._attr_unique_id = config_entry.entry_id
+        self._attr_has_entity_name = True
+        self._attr_name = None  # This will use the name from the config entry for the entity
         self._attr_device_info = {
             "identifiers": {(DOMAIN, config_entry.entry_id)},
-            "name": config_entry.title or DEFAULT_NAME,
+            "name": config_entry.title,
             "manufacturer": "LHMT",
             "model": "Weather Forecast",
             "entry_type": DeviceEntryType.SERVICE,

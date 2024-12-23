@@ -5,7 +5,7 @@
   "config_flow": true,
   "documentation": "https://github.com/moonia33/meteoltforecast",
   "iot_class": "cloud_polling",
-  "issue_tracker": "https://github.com/your-repo/meteolt/issues",
+  "issue_tracker": "https://github.com/moonia33/meteoltforecast/issues",
   "requirements": ["aiohttp>=3.8.0", "geopy>=2.3.0"],
   "version": "1.0.0"
 }
